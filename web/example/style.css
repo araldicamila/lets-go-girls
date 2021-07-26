@@ -1,0 +1,78 @@
+:root {
+  --dark: hsl(255, 11%, 22%);
+  --gray: hsl(0, 0%, 75%);
+  --cyan: hsl(180, 66%, 49%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+header a {
+  text-decoration: none;
+  margin: 0 10px;
+
+  color: var(--dark);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 100px;
+
+  display: flex;
+  justify-content: flex-end;
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: var(--dark);
+}
+
+footer img {
+  filter: brightness(10);
+
+  position: absolute;
+
+  left: 100px;
+}
+
+footer a {
+  text-decoration: none;
+
+  color: var(--gray);
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--cyan);
+}
+
+footer h4 {
+  color: #fff;
+}
+
+footer nav {
+  display: grid;
+}
+
+div {
+  margin: 0 25px;
+}
