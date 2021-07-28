@@ -19,6 +19,10 @@ function calcular(valorUm, valorDois, operando) {
   }
 }
 
+const somar = (valorUm, valorDois) => {
+  return valorUm + valorDois;
+};
+
 console.log(calcular(1, 2, "+"));
 console.log(calcular(1, 2, "-"));
 console.log(calcular(1, 2, "/"));

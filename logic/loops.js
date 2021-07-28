@@ -34,7 +34,11 @@ arr.reduce((acumulador, current) => {
 });
 
 // Cria um novo array com todos os itens que passarem na validação
-console.log(arr.filter((item) => item === 4));
+arr.filter((item) => item === 4);
+
 
 // Pega o primeiro elemento que for de acordo com a validação
-console.log(arr.find((item) => item > 3));
+arr.find((item) => item > 3);
+
+// Percore todo o array
+arr.map((item) => item);
