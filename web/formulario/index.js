@@ -1,9 +1,9 @@
-function sendvalues() {
+function sendValues() {
   event.preventDefault();
 
-  const nome = document.getElementById("nome").value;
+  const name = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
   const sobre = document.getElementById("sobre").value;
 
-  alert(nome + email + sobre);
+  alert(`Nome: ${name}. Email: ${email}. Sobre ${sobre}`);
 }
