@@ -1,0 +1,192 @@
+:root {
+  --dark: #35323e;
+  --gray: #bfbfbf;
+  --cyan: #29c7c7;
+}
+
+$white: #fff;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Poppins, sans-serif;
+
+  overflow-y: scroll;
+}
+
+header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+
+  figure {
+    margin: 0;
+    height: max-content;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0 10px;
+
+    color: var(--dark);
+
+    &:hover {
+      border-bottom: 3px solid var(--cyan);
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section {
+  padding: 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  button {
+    max-width: 150px;
+  }
+
+  img {
+    margin: auto;
+
+    width: 80%;
+    display: block;
+  }
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 100px;
+
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: var(--dark);
+
+  img {
+    filter: brightness(10);
+
+    position: absolute;
+
+    left: 100px;
+  }
+
+  a {
+    text-decoration: none;
+
+    color: var(--gray);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--cyan);
+    }
+  }
+
+  h4 {
+    color: $white;
+  }
+
+  nav {
+    display: grid;
+  }
+
+  div {
+    margin: 0 25px;
+  }
+}
+
+#get-started {
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  color: $white;
+  padding: 10px 25px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#get-started:hover {
+  opacity: 0.7;
+}
+
+/* Responsivo */
+@media (max-width: 920px) {
+  main {
+    display: grid;
+    justify-content: center;
+  }
+
+  footer {
+    display: grid;
+    justify-content: center;
+    padding: 20px 0;
+
+    position: relative;
+
+    footer {
+      position: unset;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+
+      margin: 0;
+    }
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+    nav {
+      display: none;
+    }
+
+    #menu {
+      display: block;
+      float: right;
+    }
+  }
+
+  section {
+    padding: 0 20px;
+
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #get-started {
+    margin: auto;
+  }
+}
